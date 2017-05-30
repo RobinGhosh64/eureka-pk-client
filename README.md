@@ -8,5 +8,6 @@ Prerequisites
 
 $ mvn sprint-boot:run
 
-To test:
+To test vis WEB
+http://localhost:8081/products
 
