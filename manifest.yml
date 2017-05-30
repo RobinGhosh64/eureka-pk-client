@@ -1,0 +1,13 @@
+applications:
+- name: zz
+  memory: 1G
+  instances: 1
+  host: zz
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/zz.jar
+  services:
+  - prk-elk
+  env:
+    SPRING_ADMIN_PROKARMA_EI_PIVOTAL_URL: pkmst-spring-admin.apps.prokarma.com
+    REGISTRY_SERVER_PROKARMA_EI_PIVOTAL_URL: pkmst-registry.apps.prokarma.com
+    ZIPKIN_SERVER_PROKARMA_EI_PIVOTAL_URL: pkmst-zipkin.apps.prokarma.com
